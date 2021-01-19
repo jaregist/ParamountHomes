@@ -1,0 +1,554 @@
+/****Media Query for phones/small tablets begins here****/
+/********************************************************/
+@media only screen and (max-width: 767px) {
+  /*zeros out any browser specific defaults and sets sizing to border box*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*sections display:none in mobile view*/
+  .heroimg {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+
+
+  .footer-column.warranty {
+    display: none;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .about-picture-row {
+    display: none;
+  }
+
+  .service-contact {
+    display: none;
+  }
+
+  /*"global" styles*/
+  body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+  }
+
+  body h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /*style the navigation menu*/
+  .topnav {
+    overflow: hidden;
+    background-color: #8ab1e6;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+
+  }
+
+  /*hide the links inside the navigation menu (except for logo/home)*/
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /*style navigation menu links*/
+  .topnav a {
+    color: white;
+    padding: 1em 1.2em;
+    text-decoration: none;
+    font-size: 1.4em;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+
+  }
+
+  .logo {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /*style the hamburger menu*/
+  .topnav a.icon {
+    background: #6083b1;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /*add a blue background color on mouse-over*/
+  .topnav a:hover {
+    background-color: #6083b1;
+    color: white;
+  }
+
+  /*style the active link (or home/logo)*/
+  .active {
+    background-color: #6083b1;
+    color: white;
+    
+  }
+
+  /*styling for mobile-connect-banner --- display:none in desktop view*/
+  .mobile-connect-banner {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    padding: 1em;
+  }
+
+  /*font awesome icon styling*/
+  .fa-phone {
+    color: #6cca71;
+  }
+
+  .fa-envelope {
+    color: #db7140;
+  }
+
+  .fa-facebook {
+    color: #4267B2;
+  }
+
+
+  .fas.hide, .fab.hide {
+    font-size: 2em;
+    padding: 1em;
+
+  }
+
+  /*index.html main content styling for mobile view*/
+  .column img {
+    width: 100%;
+    height: auto;
+    padding: 0 1em;
+  }
+
+  .column h2 {
+    margin: 1em;
+  }
+
+  .row {
+    text-align: center;
+    padding: .5em;
+  }
+
+  /*about.html main content styling for mobile view*/
+  .profpic {
+    float: left;
+    margin: 1em;
+  }
+
+  .about-column p {
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .about-row {
+    padding: 1em;
+  }
+
+  .about-row h3 {
+    text-align: center;
+    margin: 1em;
+  }
+
+  .about-row ul {
+    padding: 0em 1em 0em 1em;
+  }
+
+  /*contact.html main content styling for mobile view*/
+  .contact-column-left {
+    display: none;
+  }
+
+
+  input, textarea {
+    width: 80%;
+    padding: .5em;
+    margin: 1em;
+    border: 2px solid #000000;
+    border-radius: .75em;
+  }
+
+  form {
+    margin: 2em;
+  }
+  
+  /*footer content styling for mobile view*/
+  footer {
+    margin-top: 1em;
+    background-color: #6083b1;
+    color: #ffffff;
+    padding-top: 1em;
+  }
+
+  footer h3 {
+    font-size: 1.75em;
+    padding-bottom: .5em;
+  }
+
+  footer div {
+    padding: 1em;
+  }
+  
+}
+
+/****Media Query for desktops/laptops/tablets begins here****/
+/************************************************************/
+@media only screen and (min-width: 768px) {
+  /*zeros out any browser specific defaults and sets sizing to border box*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*sections display:none in desktop view*/
+  .topnav {
+    display: none;
+  }
+
+  .mobile-connect-banner {
+    display: none;
+  }
+
+  /*"global" styles*/
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /*header and nav area styling section*/
+  header nav {
+    padding-top: 3em;
+    width: 100%;
+    text-align: center;
+    min-height: 150px;
+  }
+
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 2em 0 2em;
+    background-color: #6083b1;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+
+  header li {
+    float: left;
+  }
+  
+  header li a {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    padding: 4em 2em 0em 2em;
+    text-decoration: none;
+  }
+  
+  header li a:hover{
+    font-size: 1.1em;
+  }
+  
+  header {
+    background-color: #6083b1;
+  }
+  
+  header .logo {
+    float: left;
+  }
+  
+  /*styles the banner image in desktop view i.e. div class="container" in index.html*/
+  .heroimg {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-top: 1.5em;
+  }
+
+  .container {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /*styles text-block class within container in index.html*/
+  .text-block {
+    position: absolute;
+    top: 5%; /* At the bottom. Use bottom:5% to append it to the bottom */
+    background: rgb(255, 255, 255); /* Fallback color */
+    background: rgba(255, 255, 255, 0.65); /* Black background with 0.5 opacity */
+    color: #000000;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .text-block:hover {
+    background-color: white;
+    transition: 2s;
+  }
+
+
+  .text-block h4 {
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 1.5em;
+  }
+  
+  .text-block i {
+    padding: .5em;
+  }
+
+  .info {
+    float: left;
+    width: 45%;
+  }
+
+  .info p {
+    font-weight: 600;
+  }
+
+  .buttons {
+    float: right;
+  }
+
+  /*text-block font awesome icon styling*/
+  .text-block .fa-phone {
+    color: #6cca71;
+  }
+
+  .text-block .fa-envelope {
+    color: #db7140;
+  }
+
+  .text-block .fa-facebook {
+    color: #4267B2;
+  }
+  
+  /*main styling*/
+  
+  /*3 column info styling in index.html*/
+  .column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 1em;
+  }
+
+  .row img {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+  
+  .row h2 {
+    padding-bottom: .5em;
+  }
+  
+  .row p {
+    padding: 1em;
+    font-weight: 800;
+  }
+    
+  /*clear floats after the columns*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*about.html main content styling for desktop view*/
+  .profpic {
+    float: left;
+    margin: 1em;
+  }
+  /*about.html desktop view about-column-left styling*/
+  .about-column-left {
+    float: left;
+    width: 75%;
+    padding: 1em;
+    padding-right: 1.5em;
+    border-right: 1px solid black;
+  }
+
+  .about-column-left p {
+    padding: 1em;
+  }
+
+  .about-column-left h3 {
+    text-align: center;
+  }
+
+  /*about.html desktop view about-column left image column styling*/
+  .about-picture-col {
+    float: left;
+    width: 33.33%;
+  }
+
+  .about-picture-col img {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+
+  .about-picture-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*about.html desktop view about-column-right styling*/
+  .about-column-right {
+    float: right;
+    width: 25%;
+    padding: 1em;
+    padding-right: 1.5em;
+  }
+
+  .about-column-right ul {
+    list-style-type: none;
+  }
+
+  .about-column-right li {
+    padding: 1em;
+  }
+
+  .about-column-right h3 {
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  /*clear floats after the columns*/
+  .about-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*about.html desktop view about-column-right buttons styling*/
+  .service-contact {
+    font-size: .75em;
+    position: relative;
+    top: 15em;
+  }
+
+  .service-contact ul {
+    list-style-type: none;
+    width: 100%;
+  }
+
+  .service-contact li {
+    display: inline-block;
+    margin: .5em;
+  }
+
+  .service-contact .fa-phone {
+    color: #6cca71;
+  }
+
+  .service-contact .fa-envelope {
+    color: #db7140;
+  }
+
+  .service-contact .fa-facebook {
+    color: #4267B2;
+  }
+
+  /*contact.html main content styling for mobile view*/
+
+  /*contact.html main column styling*/
+  .contact-column-left {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
+  .contact-column-right {
+    float: right;
+    width: 50%;
+    text-align: center;
+  }
+  /*clears float after the columns*/
+  .contact-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  input, textarea {
+    width: 80%;
+    padding: 1em;
+    margin: 1em;
+    border: 2px solid #000000;
+    border-radius: .75em;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .contact-column-left img {
+    width: 100%;
+    height: auto;
+    margin: 2em;
+  }
+
+  form {
+    margin: 2em;
+  }
+  
+  /*footer styling*/
+  footer {
+    background-color: #6083b1;
+  }
+  
+  i {
+    font-size: 4em;
+  
+  }
+  
+  /*3 column footer styling*/
+  .footer-column {
+    float: left;
+    width: 33.333%;
+    text-align: left;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em;
+  }
+
+  .footer-column h3 {
+    margin: 1em;
+    font-size: 1.25em;
+  }
+  
+  .connect, .warranty {
+    text-align: right;
+  }
+    
+  /*clear floats after the columns*/
+  .footer-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+}

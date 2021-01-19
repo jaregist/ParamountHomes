@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>About Us</title>
+  <!--fonts/icons from Google Fonts & Font Awesome-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/656e12d430.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- Top Navigation Menu for mobile view - display:none in desktop view -->
+  <div class="topnav">
+    <a href="#about" class="active">Paramount Homes, Inc.</a>
+  <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      Menu
+    </a>
+  </div>
+
+  <div class="mobile-connect-banner">
+    <h2>Connect with us today!</h2>
+    <i class="fas fa-phone hide"></i>
+    <i class="fas fa-envelope hide"></i>
+    <i class="fab fa-facebook hide"></i>
+  </div>
+  <hr>
+  <!--Header will be display:none on mobile display to utilize the smaller hamburger menu/nav-->
+  <header>
+    <img class="logo" src="/images/logo.png" alt="Paramount Homes logo" 
+    width="250" height="142">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--Main will be shown in both mobile and dekstop but, styled differently-->
+  <main>
+    <div class="about-row">
+      <div class="about-column-left">
+        <h3>Company Profile</h3>
+        <img class="profpic" src="images/aboutprofile.jpg" alt="builder" width="150" height="100">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor, arcu eget auctor accumsan, ex est maximus elit, vel vulputate ligula eros vel erat. Maecenas leo nunc, tristique eget congue vitae, tincidunt eget nunc. Duis ac laoreet neque. Fusce suscipit tortor orci, vitae posuere ligula pulvinar at. Pellentesque massa tortor, efficitur sed mollis ut, ullamcorper vehicula augue. Nunc placerat est ut ornare facilisis. Cras purus dolor, tempus id turpis sed, mollis eleifend neque. Fusce bibendum risus a ligula sollicitudin, eu tristique sapien mattis. Proin eu consequat nulla
+        </p>
+        <p>
+          Integer dolor erat, suscipit in semper vitae, viverra sit amet quam. Aenean vehicula lacus mi, id varius mi semper sed. Aenean lectus mauris, elementum nec tellus sed, mollis semper ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum sed nulla in tristique. Sed vel turpis quis libero auctor venenatis a non ex. Fusce rutrum nibh rhoncus odio sollicitudin auctor.
+        </p>
+        <p>
+          Cras vel consectetur velit. Quisque id diam sit amet nibh convallis feugiat. Pellentesque auctor, eros in convallis ornare, tellus neque lobortis enim, at venenatis mauris sem sit amet ligula. Suspendisse ultrices quam eget ipsum vulputate, non ornare nunc pulvinar. Nunc pellentesque vehicula mi sed porta. Mauris libero risus, gravida quis aliquam fermentum, sodales a velit. Phasellus accumsan justo ante, sit amet varius est tempus ut. Donec suscipit lectus urna, et tristique massa pharetra ut. Aliquam eget gravida ante. Nunc rutrum imperdiet ipsum, at mollis lacus hendrerit in. Aenean rutrum, elit eget pulvinar molestie, ex massa pellentesque sapien, eget malesuada quam felis a ante. Sed tempus nibh eu viverra venenatis. Aenean in nisl vulputate, bibendum ex id, sollicitudin arcu. Maecenas in ligula nec est vulputate efficitur ut nec nulla.
+        </p>
+        <div class="about-picture-row"> <!--display:none in mobile view-->
+          <div class="about-picture-col">
+            <img src="images/construction-site.jpg" alt="construction site">
+          </div>
+          <div class="about-picture-col">
+            <img src="images/plans.jpg">
+          </div>
+          <div class="about-picture-col">
+            <img src="images/hard-hat.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="about-column-right">
+        <h3>Services</h3>
+        <ul>
+          <li>Custom Builds - From  lot selection to move in day!</li>
+          <li>Inventory of in-process and finished homes</li>
+          <li>Home Renovation/Remodels</li>
+          <li>Custom cabinetry</li>
+          <li>Custom Furniture</li>
+        </ul>
+        <br>
+        <br>
+        <ul class="service-contact"> <!--display:none in mobile view-->
+          <li><a href="tel:#"><i id="green" class="fas fa-phone hide"></i></a></li>
+          <li><a href="mailto:#"><i class="fas fa-envelope hide"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-facebook hide"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <!--footer-column-warranty to be display:none on mobile view-->
+  <footer>
+    <div class="footer-row">
+      <div class="footer-column mailto">
+       <h3>Contact</h3>
+       <p>
+        <strong>John Rohnson - President</strong><br>
+        <a href="mailto:#">john_rohnson@paramounthomes.com</a><br>
+        919-919-9191
+      </p>
+      </div>
+      <div class="footer-column affiliation">
+        <h3>Affiliations</h3>
+        <p>
+          Example Home Builders, Assoc.<br>
+          Example Green Home Builders<br>
+          Example Certified Energy Rater<br>
+          Example Certified Energy Smart Builder<br>
+        </p>
+      </div>
+      <div class="footer-column warranty">
+        <h3>Home Warranties</h3>
+        <p>Example Warranty Company, LLC</p>
+        <a href="https://www.rwcwarranty.com/" target="_blank"><img src="images/warranty.png" alt="Residential Warranty Company, LLC logo"></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+</body>
+</html>
